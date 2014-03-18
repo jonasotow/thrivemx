@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/thrive.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css">
+	<script src="{{ STATIC_URL }}js/jquery-1.11.0.min.js"></script>
+	<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+	{% block content %}
+	{% endblock %}
+</body>
+</html>

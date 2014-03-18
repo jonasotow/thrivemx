@@ -1,10 +1,33 @@
-<!doctype html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Bienvenido a Thrive</title>
-</head>
-<body>
-	<h1>Thrive Proximamente</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title%}Thrive.mx - Desarrollando tus ideas {% endblock %}
+
+{% block content %}
+
+	<div class="contenedor">
+		<section>
+			<div class="top">
+				<h1>THRIVE.MX</h1>
+				<h3>Próximamente</h3>
+			</div>
+		</section>
+		
+	</div>
+
+	<footer>
+
+		<aside class="contacto">
+	        <h4 class="title">Contacto</h4>
+			<div class="datos-contacto">
+				<a href="https://twitter.com/thrivemx">@thrivemx</a>
+	            <a href="https://twitter.com/jonathansotosm">@jonathansotosm</a>
+	            <a href="mailto:thrivemx@gmail.com">thrivemx@gmail.com</a>
+	            <p>Tel: 3338155695</p>
+	            
+
+			</div>
+		</aside>
+
+	</footer>
+
+{% endblock %}

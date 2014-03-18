@@ -8,32 +8,18 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-MOTOR_DB = 'herokudb'
 
-
-if MOTOR_DB == 'herokudb'
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'd16qtme1p9epsc',
-            'HOST': 'ec2-107-21-100-118.compute-1.amazonaws.com',
-            'PORT': 5432,
-            'USER': 'zmbrkzycajtjkv',
-            'PASSWORD': 'gU-ArZHv-S7UYZM9pVs3zhMGOJ'
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd16qtme1p9epsc',
+        'HOST': 'ec2-107-21-100-118.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'zmbrkzycajtjkv',
+        'PASSWORD': 'gU-ArZHv-S7UYZM9pVs3zhMGOJ'
     }
-if MOTOR_DB == 'localdb'
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-            'NAME': 'thrivedb',                      # Or path to database file if using sqlite3.
-            # The following settings are not used with sqlite3:
-            'USER': 'postgres',
-            'PASSWORD': 'isaw.1009',
-            'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-            'PORT': '5432',                      # Set to empty string for default.
-        }
-    }  
+}
+  
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts

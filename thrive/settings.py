@@ -8,7 +8,7 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-MOTOR_DB = 'heroku'
+MOTOR_DB = 'herokudb'
 
 if MOTOR_DB == 'localdb';
     DATABASES = {

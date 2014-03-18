@@ -26,13 +26,13 @@ if MOTOR_DB == 'herokudb'
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'd2jcuq53ioee05',
-            'HOST': 'ec2-54-204-37-113.compute-1.amazonaws.com',
+            'NAME': 'd16qtme1p9epsc',
+            'HOST': 'ec2-107-21-100-118.compute-1.amazonaws.com',
             'PORT': 5432,
-            'USER': 'necjsfebebrfyw',
-            'PASSWORD': '2B4yxMU2_1hb5YitcsL43zmaAo'
+            'USER': 'zmbrkzycajtjkv',
+            'PASSWORD': 'gU-ArZHv-S7UYZM9pVs3zhMGOJ'
         }
-    }   
+    }  
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
